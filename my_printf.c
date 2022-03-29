@@ -1,5 +1,7 @@
 #include "my_printf.h"
 
+#include <stddef.h>
+
 #include "string_length.h"
 #include "my_put_char.h"
 #include "my_put_string.h"
