@@ -1,22 +1,17 @@
-#include <stdio.h>
-
 #include "my_put_string.h"
+
 #include "my_put_char.h"
 
-int my_put_string(char const* str)
+unsigned int my_put_string(const char* p_string)
 {
-	int t = 0;
-	int nm = 0;
+	unsigned int count = 0;
 
-	if (str == NULL)
-		return 0;
+	while (*p_string != '\0')
+	{
+		count += my_put_char(*p_string);
 
-	while (str[t] != '\0')
-	{	
-		my_put_char(str[t]);
-		t = t + 1;
-		++nm;
+		p_string++;
 	}
 
-	return nm;
+	return count;
 }

@@ -1,6 +1,8 @@
+#pragma once
+
 #ifndef MY_PUT_CHAR
 #define MY_PUT_CHAR
 
-int my_put_char (char c);
+unsigned int my_put_char(const char p_char);
 
 #endif

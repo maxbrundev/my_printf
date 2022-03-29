@@ -1,14 +1,18 @@
 #include "string_length.h"
 
-int string_length(char const *string)
+unsigned int string_length(const char* p_string)
 {
-    int i = 0;
+	unsigned int count = 0;
 
-    while (*string != '\0')
-    {
-        string++;
-        i++;
-    }
+	while (*p_string != '\0')
+	{
+		if(*p_string != '\n')
+		{
+			count++;
+		}
 
-    return i;
+		p_string++;
+	}
+
+	return count;
 }

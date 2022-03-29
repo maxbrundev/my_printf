@@ -15,10 +15,6 @@ set(SOURCE_FILES
         my_put_number.h
         my_put_string.c
         my_put_string.h
-        my_put_unsigned.c
-        my_put_unsigned.h
-        parse.c
-        parse.h
         string_length.c
         string_length.h)
 

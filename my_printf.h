@@ -1,6 +1,12 @@
+#pragma once
+
 #ifndef MY_PRINTF
 #define MY_PRINTF
 
-int my_printf(const char* str, ...);
+#include <stdarg.h>
+
+unsigned int my_printf(const char* p_string, ...);
+
+unsigned int parse(const char* p_string, va_list args);
 
 #endif

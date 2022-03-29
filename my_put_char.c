@@ -1,10 +1,10 @@
+#include "my_put_char.h"
+
 #include <stdio.h>
 
-#include"my_put_char.h"
-
-int my_put_char (char c)
+unsigned int my_put_char(const char p_char)
 {
- 	fwrite (&c, sizeof(char), 1, stdout);
+	fwrite(&p_char, sizeof(char), 1, stdout);
 
-	return 1;
+	return (p_char == '\n') ? 0 : 1;
 }

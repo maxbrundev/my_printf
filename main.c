@@ -1,21 +1,31 @@
+#include <stdio.h>
 #include <limits.h>
+
 #include "my_printf.h"
 
 int main()
 {
-	int nm = 0;
+	my_printf("Hello World\n");
 
-	my_printf("string\n");
-	my_printf("Array:%s\n", "string");
-	my_printf("Char:%c\n", 'A');
-	my_printf("Int_Min:%d\n", INT_MIN);
-	my_printf("Int_Max:%d\n", INT_MAX);
-	my_printf("Uint_Max:%u\n", UINT_MAX);
-	my_printf("Float:%f\n", 10.01515156846848464654658486648646468468f);
+	my_printf("string: %s\n", "Hello World");
 
-	nm = my_printf("my printf\n");
-	my_printf("%d characters", nm);
+	my_printf("char: %c\n", 'a');
 
+	my_printf("int max: %d\n", INT_MAX);
+	my_printf("int min: %d\n", INT_MIN);
+
+	my_printf("unsigned int max: %u\n", UINT_MAX);
+
+	my_printf("float: %f\n", 150.50f);
+	my_printf("signed float: %f\n", -150.50f);
+
+	unsigned int count = my_printf("test\n");
+
+	my_printf("%u characters\n", count);
+
+	my_printf("Percentage test %d%%\n", 100);
+
+	getchar();
 
 	return 0;
 }
