@@ -6,10 +6,7 @@ unsigned int string_length(const char* p_string)
 
 	while (*p_string != '\0')
 	{
-		if(*p_string != '\n')
-		{
-			count++;
-		}
+		count++;
 
 		p_string++;
 	}

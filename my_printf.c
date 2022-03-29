@@ -8,6 +8,11 @@
 
 unsigned int my_printf(const char* p_string, ...)
 {
+	if(p_string == NULL)
+	{
+		return 0;
+	}
+
 	unsigned int count = string_length(p_string);
 
 	va_list args;
